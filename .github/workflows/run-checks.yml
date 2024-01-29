@@ -1,0 +1,20 @@
+name: Code Checker
+
+on:
+  pull_request:
+    branches:
+      master
+
+jobs:
+  run:
+    name: Run linter
+    steps:
+      - name: Checkout the branch
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+      - name: Install linter
+        run: python install pylint
+      - name: Run linter
+        Run: pylint main.py
+        
