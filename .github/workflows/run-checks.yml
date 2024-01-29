@@ -16,5 +16,4 @@ jobs:
       - name: Install linter
         run: python install pylint
       - name: Run linter
-        Run: pylint main.py
-        
+        run: pylint main.py
