@@ -1,8 +1,11 @@
-# Version control 
+# Version control
+
+def question_asker(question):
+    print(question)
+    return input()
 
 print("Hello CODE PA people!")
 
-name = input("What's your name?")
+question_asker("What's your name?")
 
-print("How has your day been?")
-status = input()
+question_asker("How has your day been?")
